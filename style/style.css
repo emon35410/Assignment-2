@@ -107,7 +107,16 @@ nav {
     padding: 19px 80px;
 
 }
-
+/* section plant-lover */
+.plant-lover{
+    display: flex;
+    gap: 30px;
+    padding: 100px 150px; 
+}
+.lover-title{
+    font-weight: bold;
+    font-size: 3.125rem;
+}
 @media screen and (max-width: 576px) {
 
     .home,
@@ -149,5 +158,13 @@ nav {
         padding: 0;
         gap: 20px;
     }
+    .plant-lover{
+        display: flex;
+    flex-direction: column; 
+    padding: 40px 5px;
+}
+.lover-image{
+    width: 50%;
+}
 
 }
