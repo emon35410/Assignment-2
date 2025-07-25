@@ -19,7 +19,7 @@ body {
 }
 
 /* header */
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -31,10 +31,16 @@ nav {
 
 }
 
-
 .links {
     display: flex;
     gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .link-item {
@@ -114,6 +120,8 @@ nav {
 
 /* section plant-lover */
 .latest-info {
+    display: grid;
+    gap: 20px;
     text-align: center;
 }
 
@@ -151,8 +159,9 @@ nav {
     color: #FFFFFF;
 }
 
-.btn-1, .btn-2 {
-    
+.btn-1,
+.btn-2 {
+
     color: #FFFFFF;
 }
 
@@ -187,15 +196,13 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
     background-size: cover;
-    background-position: center;
     border-radius: 14px;
     height: 206px;
     width: 366px;
     display: flex;
-   filter: brightness(80%);
-    
+    filter: brightness(80%);
+
 }
 
 
@@ -204,38 +211,44 @@ nav {
     height: 423px;
     border-radius: 22px;
 }
+
 /* Join-Part */
-.search{
+.search {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 23px;
 }
-.form{
-   
+
+.form {
+
     display: flex;
     gap: 0;
     justify-content: center;
     align-items: center;
 }
-.join-title{
+
+.join-title {
     color: #FFFFFF;
     font-weight: bold;
     font-size: 3.125rem;
 }
-.input{
+
+.input {
     width: 700px;
     height: 40px;
     border: none;
 }
-.btn-join{
+
+.btn-join {
     background-color: #E95A08;
     color: #FFFFFF;
     border: none;
     width: 186px;
-    height: 40px;  
+    height: 40px;
 }
-.join{
+
+.join {
     background-image: url(../assets/news-letter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -248,6 +261,43 @@ nav {
     overflow: 0;
     width: 100%;
 }
+
+/* Footer-Part */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 160px;
+}
+
+.image-paragraph {
+    display: grid;
+    gap: 10px;
+}
+
+.footer-item {
+    list-style: none;
+}
+
+.footer-links {
+    text-decoration: none;
+}
+
+.footer-link-1 ul {
+    display: grid;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-icon {
+    width: 216px;
+    height: 36px;
+    gap: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+
 @media screen and (max-width: 576px) {
 
     .home,
@@ -255,9 +305,11 @@ nav {
     .About {
         display: none;
     }
-    header main footer{
+
+    header main footer {
         overflow: 0;
     }
+
     .nav {
         display: flex;
         justify-content: flex-start;
@@ -292,45 +344,60 @@ nav {
     .lover-image {
         width: 50%;
     }
-    .image-plant{ 
+
+    .image-plant {
         display: grid;
-        grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
+        padding: 20px 10px;
 
     }
+
     .background-image-3 {
-    width: 366px;
-    height: 206px;
-    
-}
-.join{
-    width: 393px;
-    height: 276px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: 0;
-    width: 100%;
-}
-.join-title{
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 1.25rem;
-}
-.input{
-    width: 300px;
-    height: 50px;
-    border: none;
-}
-.btn-join{
-    background-color: #E95A08;
-    color: #FFFFFF;
-    border: none;
-    width: 103px;
-    height: 50px;  
-}
+        width: 366px;
+        height: 206px;
+
+    }
+
+    .join {
+        width: 393px;
+        height: 276px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: 0;
+        width: 100%;
+    }
+
+    .join-title {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+
+    .input {
+        width: 300px;
+        height: 50px;
+        border: none;
+    }
+
+    .btn-join {
+        background-color: #E95A08;
+        color: #FFFFFF;
+        border: none;
+        width: 103px;
+        height: 50px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 25px;
+        flex-direction: column;
+        gap: 30px;
+    }
 
 
 }
