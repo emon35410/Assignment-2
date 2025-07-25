@@ -37,7 +37,8 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.nav-button{
+
+.nav-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,8 +120,9 @@ nav {
     padding: 19px 80px;
 
 }
+
 /* badge image part */
-.trusted-badge{
+.trusted-badge {
     width: 286px;
     height: 286px;
     position: relative;
@@ -138,15 +140,17 @@ nav {
 .plant-lover {
     display: flex;
     gap: 90px;
-    padding:0px 130px;
+    padding: 0px 130px;
     padding-bottom: 100px;
 }
-.lover-description{
+
+.lover-description {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.lover-paragraph{
+
+.lover-paragraph {
     display: grid;
     gap: 35px;
 }
@@ -321,6 +325,25 @@ nav {
 
 @media screen and (max-width: 576px) {
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header img{
+        max-width: 102%;
+    }
+    .plant-info img{
+        max-width: 100%;
+    }
+    html,
+    body {
+        max-width: 100%;
+    }
+    main{
+        max-width: 100%;
+    }
+
     .home,
     .shop,
     .About {
@@ -355,7 +378,8 @@ nav {
         padding: 0;
         gap: 20px;
     }
-    .trusted-badge{
+
+    .trusted-badge {
         display: none;
     }
 
@@ -410,18 +434,15 @@ nav {
         background-color: #E95A08;
         color: #FFFFFF;
         border: none;
-        width: 103px;
+        width: 60px;
         height: 50px;
     }
 
     .footer {
         display: flex;
         justify-content: space-between;
-
         padding: 25px;
         flex-direction: column;
         gap: 30px;
     }
-
-
 }
